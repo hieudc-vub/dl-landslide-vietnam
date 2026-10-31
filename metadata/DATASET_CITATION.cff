@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite this dataset when using its raster patches and labels."
+type: dataset
+title: "A Systematic Benchmark of Deep Learning Architectures for Landslide Inventory Mapping with Bi-Temporal Sentinel-2 and ALOS AW3D30 in Northern Vietnam"
+version: 1.0.0
+doi: "10.5281/zenodo.23838723"
+url: "https://doi.org/10.5281/zenodo.23838723"
+license: CC-BY-NC-4.0
+authors:
+  - family-names: Duong
+    given-names: Cong Hieu
+    orcid: "https://orcid.org/0009-0003-6801-2139"
+  - family-names: Chan
+    given-names: Jonathan
+  - family-names: Luu
+    given-names: Chinh
+  - family-names: Kervyn
+    given-names: Matthieu

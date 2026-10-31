@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "Please cite this software and cite the associated dataset separately using its Zenodo DOI. The dataset DOI does not identify this software."
+type: software
+title: "dl-landslide-vietnam: reusable landslide segmentation benchmark"
+version: 0.4.0
+repository-code: "https://github.com/hieudc-vub/dl-landslide-vietnam"
+url: "https://github.com/hieudc-vub/dl-landslide-vietnam"
+license: MIT
+authors:
+  - family-names: Duong
+    given-names: Cong Hieu
+    orcid: "https://orcid.org/0009-0003-6801-2139"
+  - family-names: Chan
+    given-names: Jonathan Cheung-Wai
+  - family-names: Luu
+    given-names: Chinh
+  - family-names: Kervyn
+    given-names: Matthieu
+references:
+  - type: data
+    title: "A Systematic Benchmark of Deep Learning Architectures for Landslide Inventory Mapping with Bi-Temporal Sentinel-2 and ALOS AW3D30 in Northern Vietnam"
+    doi: "10.5281/zenodo.23838723"
+    year: 2026
+    notes: "Dataset version 1.0.0. Zenodo."
+    authors:
+      - family-names: Duong
+        given-names: Cong Hieu
+      - family-names: Chan
+        given-names: Jonathan
+      - family-names: Luu
+        given-names: Chinh
+      - family-names: Kervyn
+        given-names: Matthieu

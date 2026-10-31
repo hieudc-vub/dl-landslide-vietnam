@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_version": "1.0.0",
+  "status": "published_rasters_metadata_distributed_with_code",
+  "dataset_root": "data/SAMPLE_DATASET_256x256",
+  "manifest_paths_relative_to": "data/SAMPLE_DATASET_256x256",
+  "source_file_count": 9004,
+  "released_raster_count": 9000,
+  "sample_count": 4500,
+  "source_size_bytes": 28625306038,
+  "raster_size_bytes": 28624961404,
+  "splits": {
+    "TRAIN_256": 3600,
+    "VAL_256": 450,
+    "TEST_256": 450
+  },
+  "stack": {
+    "format": "TIFF",
+    "dtype": "float32",
+    "shape_chw": [
+      20,
+      256,
+      256
+    ],
+    "band_index_base": 1,
+    "bands": [
+      {
+        "index_1based": 1,
+        "name": "post_B4"
+      },
+      {
+        "index_1based": 2,
+        "name": "post_B3"
+      },
+      {
+        "index_1based": 3,
+        "name": "post_B2"
+      },
+      {
+        "index_1based": 4,
+        "name": "post_B8"
+      },
+      {
+        "index_1based": 5,
+        "name": "post_B7"
+      },
+      {
+        "index_1based": 6,
+        "name": "post_B11"
+      },
+      {
+        "index_1based": 7,
+        "name": "post_B12"
+      },
+      {
+        "index_1based": 8,
+        "name": "post_BSI"
+      },
+      {
+        "index_1based": 9,
+        "name": "pre_B4"
+      },
+      {
+        "index_1based": 10,
+        "name": "pre_B3"
+      },
+      {
+        "index_1based": 11,
+        "name": "pre_B2"
+      },
+      {
+        "index_1based": 12,
+        "name": "slope_norm"
+      },
+      {
+        "index_1based": 13,
+        "name": "D_B2_norm"
+      },
+      {
+        "index_1based": 14,
+        "name": "D_B3_norm"
+      },
+      {
+        "index_1based": 15,
+        "name": "D_B4_norm"
+      },
+      {
+        "index_1based": 16,
+        "name": "D_B5_norm"
+      },
+      {
+        "index_1based": 17,
+        "name": "D_B8_norm"
+      },
+      {
+        "index_1based": 18,
+        "name": "D_B12_norm"
+      },
+      {
+        "index_1based": 19,
+        "name": "D_NDVI_norm"
+      },
+      {
+        "index_1based": 20,
+        "name": "D_BSI_norm"
+      }
+    ],
+    "band_order_evidence": "TIFF descriptions checked on every STACK; matches code v0.4.0",
+    "allowed_range": [
+      -1,
+      1
+    ],
+    "validation_tolerance": 1e-05,
+    "finite_values_required": true,
+    "additional_normalization": false
+  },
+  "label": {
+    "format": "TIFF",
+    "dtype": "uint8",
+    "shape_chw": [
+      1,
+      256,
+      256
+    ],
+    "values": {
+      "0": "background",
+      "1": "landslide"
+    },
+    "ignore_value": null
+  },
+  "spatial": {
+    "crs": null,
+    "affine_coefficients_a_b_c_d_e_f": [
+      1,
+      0,
+      0,
+      0,
+      -1,
+      0
+    ],
+    "geographic_extent": null,
+    "nominal_pixel_size_m": 10,
+    "nominal_scale_basis": "Owner-confirmed research protocol; not inferred from raster georeferencing",
+    "spatial_split_independence": "not established by this audit"
+  },
+  "nodata": null,
+  "invalid_pixels_allowed": false,
+  "legacy_metadata": {
+    "excluded_from_payload": [
+      "__manifests/TEST_pairs.json",
+      "__manifests/TRAIN_pairs_filtered.json",
+      "__manifests/VAL_pairs.json",
+      "__schema.json"
+    ],
+    "reason": "Upstream schema and historical manifests do not describe the released patch inventory"
+  },
+  "manifest_contract": {
+    "file_manifest": "All 9004 original files, including 4 excluded internal JSON files; filter release_included for payload checks",
+    "raster_manifest": "Exactly 9000 released TIFF files; use this for post-extraction verification",
+    "sample_manifest": "Exactly 4500 filename-matched pairs; no split changes"
+  },
+  "provenance_status": "Owner-confirmed source year, collection and creator order; preprocessing reconstruction outside release scope",
+  "creators": [
+    "Cong Hieu Duong",
+    "Jonathan Cheung-Wai Chan",
+    "Chinh Luu",
+    "Matthieu Kervyn"
+  ],
+  "source_provenance": {
+    "evidence": "Owner confirmation in this preparation session; no upstream script reconstruction",
+    "sentinel_2_year": 2024,
+    "aw3d30_product": "ALOS World 3D - 30m (AW3D30) Digital Surface Model",
+    "aw3d30_provider": "JAXA",
+    "aw3d30_collection": "JAXA/ALOS/AW3D30/V4_1",
+    "aw3d30_collection_note": "The catalog states this collection combines versions 3.1, 4.0 and 4.1; per-tile version not independently verified.",
+    "preprocessing_script": "Not supplied for this release by owner choice; no private path included",
+    "exact_date_windows_and_source_tiles": "Not documented in this prepared-patch release",
+    "catalog_reference": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_ALOS_AW3D30_V4_1"
+  },
+  "archive_format": {
+    "container": "ZIP64",
+    "compression": "STORE; original TIFF LZW preserved",
+    "timestamp": "1980-01-01 00:00:00; administrative ZIP timestamp, not acquisition date",
+    "root": "dl-landslide-vietnam",
+    "checksums": "SHA-256",
+    "archive_parts": [
+      "train",
+      "val",
+      "test"
+    ],
+    "metadata_location": "GitHub repository metadata/ and documentation; no metadata ZIP is distributed on Zenodo"
+  },
+  "doi": "10.5281/zenodo.23838723",
+  "title": "A Systematic Benchmark of Deep Learning Architectures for Landslide Inventory Mapping with Bi-Temporal Sentinel-2 and ALOS AW3D30 in Northern Vietnam"
+}

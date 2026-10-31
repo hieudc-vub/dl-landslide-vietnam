@@ -1,0 +1,20 @@
+{
+  "status": "published",
+  "doi": "10.5281/zenodo.23838723",
+  "concept_doi": "10.5281/zenodo.23838722",
+  "landing_page": "https://doi.org/10.5281/zenodo.23838723",
+  "version": "1.0.0",
+  "title": "A Systematic Benchmark of Deep Learning Architectures for Landslide Inventory Mapping with Bi-Temporal Sentinel-2 and ALOS AW3D30 in Northern Vietnam",
+  "license": "CC-BY-NC-4.0",
+  "root_folder": "dl-landslide-vietnam",
+  "dataset_subfolder": "SAMPLE_DATASET_256x256",
+  "relative_dataset_path": "data/SAMPLE_DATASET_256x256",
+  "archives": [
+    "dataset-v1.0.0-train.zip",
+    "dataset-v1.0.0-val.zip",
+    "dataset-v1.0.0-test.zip"
+  ],
+  "metadata_location": "metadata/",
+  "checkpoints_published": false,
+  "note": "Dataset DOI, not an article or software DOI. Raster archives are on Zenodo; schema and manifests accompany this code snapshot."
+}
